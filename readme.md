@@ -7,28 +7,27 @@
 * Spring
 * JPA
 * PostgreSQL
-* Multi layer architecture
+* Multi-layer architecture
 * AWS EC2
 * AWS S3
 * AWS RDS
 
-### Main funcitonalities
+### Main functionalities
 
-Add a new tech event, uploading even the event image banner;
-Add coupons to this tech events;
-Filter events by title, by location and by start date;
-Filter the events by a specific page size.
+Add a new tech event, including the upload of the event image banner.
+Add coupons for these tech events.
+Filter events by title, location, and start date.
+Filter events by a specific page size.
 
 
 ### Main steps
 
-1. Multi-layer project: config, controller, domain, repository and service.
-2. Archicteture summary: 
-   * VPC with two subnets (one public and one private), each one in a differente AZ;
-   * Create a EC2 instance, where we are running our back-end project;
-   * Configure a RDS database in the VPC private subnet;
-   * The EC2 is allowed to read and to write the files available in the S3 bucket via policy.
-
+1. Multi-layer project structure: config, controller, domain, repository, and service.
+2. Architecture summary:
+   * VPC with two subnets (one public and one private), each located in a different AZ.
+   * Create an EC2 instance, which runs our back-end project.
+   * Set up an RDS database in the private subnet of the VPC.
+   * The EC2 instance is authorized to read and write files in the S3 bucket via policy.
 
 ### References:
 
